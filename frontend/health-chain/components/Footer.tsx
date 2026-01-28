@@ -11,7 +11,7 @@ export default function Footer() {
                 <Image src="/logo-drop.svg" alt="Logo" width={30} height={30} />
             </div>
 
-            <div className="flex items-center gap-8">
+            <div className="flex flex-col md:flex-row items-center gap-8 text-center md:text-left">
                 <span className="text-[22px] font-normal">Ready to get started?</span>
                 <button className="bg-brand-loginBtn text-[#fffbfb] w-[185px] h-[45px] rounded font-roboto font-bold text-[20px] shadow-lg hover:opacity-90">
                     Become A Donor
@@ -20,14 +20,13 @@ export default function Footer() {
         </div>
 
         {/* --- ROW 2 --- */}
-        <div className="flex flex-col xl:flex-row justify-between items-start gap-20 mb-20">
+        <div className="flex flex-col xl:flex-row justify-between items-center xl:items-start gap-20 mb-20 text-center xl:text-left">
             
             {/* Newsletter */}
-            <div className="flex flex-col gap-6">
-                <p className="w-[165px] font-normal text-[22px] leading-[100%] tracking-[-0.3px]">
+            <div className="flex flex-col items-center xl:items-start gap-6">
+                <p className="w-full md:w-[165px] font-normal text-[22px] leading-[100%] tracking-[-0.3px]">
                     Subscribe to our newsletter
                 </p>
-                {/* Input with Footer Background Color & Light Grey Border */}
                 <div className="flex items-center bg-brand-footer border border-[#4b4949] rounded-lg overflow-hidden w-[289px] h-[51px]">
                     <input 
                         type="email" 
@@ -35,14 +34,13 @@ export default function Footer() {
                         className="bg-brand-footer text-white px-4 w-full h-full border-none focus:outline-none placeholder-gray-400 font-poppins text-[15px]" 
                     />
                     <button className="bg-brand-loginBtn w-[50px] h-[50px] flex items-center justify-center hover:opacity-90">
-                         {/* Simple Chevron or Arrow Text */}
                          <span className="text-white text-xl font-bold">&gt;</span>
                     </button>
                 </div>
             </div>
 
             {/* Links */}
-            <div className="flex flex-wrap gap-10 md:gap-20">
+            <div className="flex flex-col md:flex-row gap-10 md:gap-20">
                 <div>
                     <h3 className="text-[#bfbfbf] text-[16px] mb-6">Services</h3>
                     <ul className="space-y-4 text-[15px] font-normal text-gray-300">
@@ -72,7 +70,7 @@ export default function Footer() {
         </div>
 
         {/* --- ROW 3 --- */}
-        <div className="flex flex-col md:flex-row justify-between items-center pt-8 gap-4 md:gap-0">
+        <div className="flex flex-col md:flex-row justify-between items-center pt-8 gap-6 md:gap-0">
             <div className="flex gap-8 text-[15px] text-gray-300">
                 <a href="#" className="hover:text-white">Terms & Conditions</a>
                 <a href="#" className="hover:text-white">Privacy Policy</a>
